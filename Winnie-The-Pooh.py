@@ -23,8 +23,7 @@ result = list()
 for word in words_in_poem: #перебираем слова в стихотворении
     count = 0
     for letter in word: # перебираем буквы с словах
-        if letter in vowels:
-            count += 1
+        count += letter in vowels
     result.append(count) #добавляем сумму гласных в список
 #из списка переводим во множество, чтобы исключить повторяющиеся колва гласных
 print (set(result))
